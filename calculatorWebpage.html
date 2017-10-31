@@ -4,12 +4,55 @@
         <link href="https://fonts.googleapis.com/css">
 
         <style>
-
+            button{
+                width : 50px;
+                height : 50px;
+            }
+            .number{
+                background-color: dimgray
+            }
+            .operand{
+                background-color: green
+            }
+            .equal{
+                background-color: red
+            }
+            .four{
+                width: 200px;
+                height: 50px;
+                text-align: right;
+            }
         </style>
+        <script>
+            addToField = (number) => {
+                document.getElementById("field").innerHTML += number;
+            }
+
+            addition = 
+        </script>
 
     </head>
     <body>
-        <input type="text" />
-        <button type="button">Push Me!</button>
+        <div class = "four" id = "field"></div>
+        <br />
+        <button class="number" onClick="addToField(1)">1</button>
+        <button class="number" onClick="addToField(2)">2</button>
+        <button class="number" onClick="addToField(3)">3</button>
+        <button class="operand" onClick="addToField('+')">+</button> 
+        <br />
+        <button class="number" onClick="addToField(4)">4</button>
+        <button class="number" onClick="addToField(5)">5</button>
+        <button class="number" onClick="addToField(6)">6</button>
+        <button class="operand" onClick="addToField('-')">-</button> 
+        <br />
+        <button class="number" onClick="addToField(7)">7</button>
+        <button class="number" onClick="addToField(8)">8</button>
+        <button class="number" onClick="addToField(9)">9</button>
+        <button class="operand" onClick="addToField('/')">/</button> 
+        <br />
+        <button class="number" onClick="addToField(0)">0</button>
+        <button class="equal" onClick="addToField('=')">=</button>
+        <button class="operand" onClick="addToField()">*</button> 
+        <br />
     </body>
 </html>
